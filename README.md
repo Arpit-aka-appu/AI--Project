@@ -1,17 +1,82 @@
-# Introduction
+# 🤖 Self-Learning AI Agent
 
-This Cookbook contains examples and tutorials to help developers build AI systems with copy/paste code snippets that you can easily integrate into your own projects.
+An intelligent, self-learning AI agent designed to understand user instructions, reason about tasks, learn from previous interactions, and perform tasks using different tools and capabilities.
 
-## About me
+The goal of this project is to build an AI system that behaves more like an intelligent digital assistant or autonomous AI bot rather than a simple question-answering chatbot.
 
-I'm Dave, an AI engineer and founder of Datalumina. I run an AI development company, and on my [YouTube channel](https://www.youtube.com/@daveebbelaar?sub_confirmation=1), I share practical tutorials that teach you how to build AI systems that actually work in the real world.
+---
 
-### My other work
+## 🚀 Overview
 
-Beyond this cookbook, I've created a few other resources that might help you depending on where you are in your career.
+The **Self-Learning AI Agent** is an AI-powered system that can:
 
-If you're completely new to AI and just getting started with Python, I have a [free five-hour course](https://youtu.be/ygXn5nV5qFc) that covers everything you need to know to build a solid foundation.
+- Understand natural-language instructions
+- Break complex tasks into smaller steps
+- Reason about problems and decide what actions to take
+- Use different tools to accomplish tasks
+- Learn from previous interactions
+- Maintain context and knowledge
+- Adapt its behavior based on experience
+- Execute tasks with minimal human intervention
 
-If you're already comfortable with the basics and want to go deeper, I run a program where I teach developers [how to build and deploy end-to-end GenAI solutions](https://go.datalumina.com/CkIsMAK) using the same approach we use for our agency clients.
+Instead of simply responding to a question, the agent is designed to determine **what needs to be done and how to accomplish it**.
 
-And if you're a skilled developer or data professional looking to go independent, I can help you [land your first client](https://go.datalumina.com/MVWhVn9).
+### Example
+
+A traditional chatbot may respond:
+
+> "Here are the steps to organize your files."
+
+A task-oriented AI agent aims to go further:
+
+```text
+User
+  ↓
+"Organize my project files"
+  ↓
+AI Agent
+  ↓
+Understand the task
+  ↓
+Analyze available files
+  ↓
+Create a plan
+  ↓
+Execute required actions
+  ↓
+Verify the result
+  ↓
+Learn from the interaction 
+
+                ┌─────────────────────┐
+                │       USER          │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │   Agent Interface   │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │     AI / LLM        │
+                │ Reasoning Engine    │
+                └──────────┬──────────┘
+                           ↓
+             ┌─────────────┴─────────────┐
+             ↓                           ↓
+      ┌──────────────┐            ┌──────────────┐
+      │    Memory    │            │     Tools    │
+      │              │            │              │
+      │ Context      │            │ APIs         │
+      │ Knowledge    │            │ MCP          │
+      │ Experience   │            │ External Apps│
+      └──────────────┘            └──────────────┘
+             │                           │
+             └─────────────┬─────────────┘
+                           ↓
+                ┌─────────────────────┐
+                │  Task Execution     │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Feedback / Learning │
+                └─────────────────────┘
